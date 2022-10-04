@@ -6,6 +6,7 @@ import composelab.dajee.core.navigation.IFeatureNavigationGraph
 import composelab.dajee.feature1.navigation.Feature1Navigation.navParameterKey
 import composelab.dajee.feature1.screens.Feature1HomeScreen
 import composelab.dajee.feature1.screens.Feature1TestScreen
+import composelab.dajee.feature1.screens.Feature1TestScreen2
 
 
 object Feature1NavigationGraph : IFeatureNavigationGraph {
@@ -16,13 +17,16 @@ object Feature1NavigationGraph : IFeatureNavigationGraph {
         navGraphBuilder.apply {
             navigation(startDestination = Feature1Navigation.getHomeRoute(), route = Feature1Navigation.baseRoute()){
 
-                composable( Feature1Navigation.getHomeRoute()){
+                composable(Feature1Navigation.getHomeRoute()){
                     Feature1HomeScreen(navController)
                 }
                 composable(Feature1Navigation.getTestScreenRouteTemplate() , arguments = listOf(navArgument(navParameterKey) { type = NavType.StringType } )){
-                    Feature1TestScreen( it.arguments?.getString(navParameterKey)?:"")
+                    Feature1TestScreen( it.arguments?.getString(navParameterKey)?:"", navController)
                 }
 
+                composable(Feature1Navigation.getTestScreen2Route()){
+                    Feature1TestScreen2("")
+                }
             }
         }
 
