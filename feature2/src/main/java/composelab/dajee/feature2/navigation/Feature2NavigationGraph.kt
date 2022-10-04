@@ -15,13 +15,12 @@ object Feature2NavigationGraph : IFeatureNavigationGraph {
         navGraphBuilder.apply {
             navigation(startDestination = Feature2Navigation.getHomeRoute(), route = Feature2Navigation.baseRoute()){
 
-                composable( Feature2Navigation.getHomeRoute()){
+                composable( Feature2Navigation.getHomeRoute(),deepLinks = listOf(navDeepLink { uriPattern = "dajee://example.com" })){
                     Feature2HomeScreen(navController)
                 }
                 composable(Feature2Navigation.getTestScreenRoute()){
                     Feature2TestScreen(navController)
                 }
-
             }
         }
 
