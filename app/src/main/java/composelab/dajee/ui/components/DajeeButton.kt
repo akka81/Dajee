@@ -1,6 +1,5 @@
 package composelab.dajee.ui.components
 
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -9,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import composelab.dajee.ui.theme.Shapes
 import composelab.dajee.ui.theme.Typography
 
 @Preview(showBackground = true)
@@ -22,7 +22,7 @@ fun DajeeButton(
 
     Button(
         onClick = onClick,
-        shape = RoundedCornerShape(12.dp),
+        shape = Shapes.large,
         colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
         modifier = modifier
     ) {

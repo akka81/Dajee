@@ -13,10 +13,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/coreNavigation" />
-            <option value="$PROJECT_DIR$/feature1" />
-            <option value="$PROJECT_DIR$/feature1Navigation" />
             <option value="$PROJECT_DIR$/feature2" />
             <option value="$PROJECT_DIR$/feature2Navigation" />
+            <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/homeNavigation" />
           </set>
         </option>
       </GradleProjectSettings>

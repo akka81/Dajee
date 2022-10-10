@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import composelab.dajee.feature1.navigation.Feature1NavigationGraph
+import composelab.dajee.home.navigation.Feature1NavigationGraph
 import composelab.dajee.feature2.navigation.Feature2NavigationGraph
 
 @Composable
