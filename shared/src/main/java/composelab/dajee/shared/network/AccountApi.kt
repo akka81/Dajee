@@ -1,8 +1,8 @@
-package composelab.dajee.home.network;
+package composelab.dajee.shared.network;
 
-import composelab.dajee.home.network.dtos.AccountBalanceDto;
-import composelab.dajee.home.network.dtos.AccountHolderDto;
-import composelab.dajee.home.network.dtos.AccountsDto;
+import composelab.dajee.shared.network.dto.account.AccountBalanceDto;
+import composelab.dajee.shared.network.dto.account.AccountHolderDto;
+import composelab.dajee.shared.network.dto.account.AccountsDto;
 import okhttp3.RequestBody
 import retrofit2.http.*
 

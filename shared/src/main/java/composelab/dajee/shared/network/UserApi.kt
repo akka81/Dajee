@@ -1,6 +1,6 @@
-package composelab.dajee.home.network
+package composelab.dajee.shared.network
 
-import composelab.dajee.home.network.dtos.UserDto
+import composelab.dajee.shared.network.dto.user.UserDto
 import retrofit2.http.GET
 import retrofit2.http.Header
 

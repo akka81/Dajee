@@ -1,4 +1,4 @@
-package composelab.dajee.home.network.dtos
+package composelab.dajee.shared.network.dto.account
 
 
 data class AccountDto(
