@@ -14,7 +14,7 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import composelab.dajee.home.navigation.Feature1Navigation
-import composelab.dajee.feature2.navigation.Feature2Navigation
+import composelab.dajee.payees.navigation.Feature2Navigation
 
 
 @Composable

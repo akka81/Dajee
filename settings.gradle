@@ -15,8 +15,8 @@ dependencyResolutionManagement {
 rootProject.name = "Dajee"
 include ':app'
 include ':home'
-include ':feature2'
+include ':payees'
 include ':coreNavigation'
-include ':feature2Navigation'
+include ':payeesNavigation'
 include ':homeNavigation'
 include ':shared'

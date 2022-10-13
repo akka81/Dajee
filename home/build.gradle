@@ -51,7 +51,7 @@ dependencies {
     implementation "androidx.navigation:navigation-compose:$nav_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$viewmodel_version"
     implementation project(path: ':coreNavigation')
-    implementation project(path: ':feature2Navigation')
+    implementation project(path: ':payeesNavigation')
     implementation project(path: ':homeNavigation')
 
     testImplementation 'junit:junit:4.13.2'
