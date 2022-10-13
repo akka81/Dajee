@@ -1,10 +1,8 @@
 package composelab.dajee.payees.network.dto
 
-import com.davidm.payees.entities.PayeeAccount
-
 
 data class PayeeDto(
-    val accounts: List<PayeeAccount>,
+    val accounts: List<PayeeAccountDto>,
     val businessName: String?,
     val dateOfBirth: String?,
     val firstName: String?,

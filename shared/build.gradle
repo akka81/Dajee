@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace 'composelab.dajee.shared'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         minSdk 21
-        targetSdk 32
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -25,12 +25,24 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.1.1'
+    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
 }
 
 dependencies {
+
+    implementation "androidx.compose.material3:material3:$compose_ui_material3"
+    implementation "androidx.compose.ui:ui:$compose_ui_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
+    implementation 'androidx.compose.material:material:1.2.1'
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit2"
     implementation "androidx.core:core-ktx:$core_ktx"

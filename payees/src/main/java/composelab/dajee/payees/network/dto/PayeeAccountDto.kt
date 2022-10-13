@@ -1,11 +1,8 @@
-package com.davidm.payees.entities
+package composelab.dajee.payees.network.dto
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
 import java.util.*
 
-@Parcelize
-data class PayeeAccount(
+data class PayeeAccountDto(
     val accountIdentifier: String,
     val bankIdentifier: String,
     val bankIdentifierType: String?,
@@ -13,9 +10,9 @@ data class PayeeAccount(
     val defaultAccount: Boolean?,
     val description: String?,
     val payeeAccountUid: String?
-): Parcelable
+)
 
-val defaultAccount: PayeeAccount = PayeeAccount(
+val defaultAccount: PayeeAccountDto = PayeeAccountDto(
     accountIdentifier = "00000825",
     bankIdentifier = "204514",
     bankIdentifierType = "SORT_CODE",

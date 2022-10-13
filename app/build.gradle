@@ -60,9 +60,12 @@ dependencies {
     implementation "androidx.compose.material3:material3:$compose_ui_material3"
     implementation 'androidx.compose.material:material:1.2.1'
     implementation "androidx.navigation:navigation-compose:$nav_version"
+
     implementation project(path: ':home')
     implementation project(path: ':payees')
     implementation project(path: ':coreNavigation')
+    implementation project(path: ':shared')
+
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
