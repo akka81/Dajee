@@ -58,11 +58,11 @@ fun HomeScreen(
                 navigator.navigate(
                     Feature2Navigation.getHomeRoute()
                 )
-            }, modifier = Modifier.fillMaxWidth(), text = "Test 2")
+            }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp), text = "Test 2")
             DajeeButton(onClick = {
                 navigator.navigate(Feature2Navigation.getTestScreenRoute())
 
-            }, modifier = Modifier.fillMaxWidth(), text = "Test 2 home")
+            }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp), text = "Test 2 home")
         }
     }
 }
