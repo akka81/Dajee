@@ -1,4 +1,4 @@
-package composelab.dajee.ui.components
+package composelab.dajee.shared.ui.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.shape.RoundedCornerShape
